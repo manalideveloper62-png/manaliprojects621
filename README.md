@@ -1,2 +1,11 @@
-# manaliprojects621
-Full-Stack Developer | Flutter &amp; React Specialist 🚀 Building high-performance mobile apps with Dart &amp; Flutter. 💻 Passionate about C++, Node.js, and System Administration. 🛠️ Exploring the bridge between clean code and scalable architecture.
+
+  # Personal EdTech Platform
+
+  This is a code bundle for Personal EdTech Platform. The original project is available at https://www.figma.com/design/AgwjQJdmSM2jqgn43KQejm/Personal-EdTech-Platform.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  

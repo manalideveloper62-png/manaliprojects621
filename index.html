@@ -1,16 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudX | Testing Environment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">X</div>
+            <div class="status-badge"><span class="pulse"></span> MinIO Infrastructure Online</div>
+        </header>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Become a Rank Holder - Master JEE & NEET</title>
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-    </head>
+        <main>
+            <section class="metrics-grid" id="stats-container">
+                <div class="metric-card">
+                    <div class="label">Storage Used</div>
+                    <div class="value" id="total-storage">0 B</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Object Count</div>
+                    <div class="value" id="file-count">0</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Throughput</div>
+                    <div class="value" id="live-speed">0 Mbps</div>
+                </div>
+            </section>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+            <section class="upload-zone" id="drop-zone">
+                <input type="file" id="file-input" multiple hidden>
+                <div class="upload-icon">↑</div>
+                <h3>Initialize Uplink</h3>
+                <p>Drag files or click to transmit to MinIO</p>
+            </section>
+
+            <section class="queue-section" id="upload-queue">
+                <!-- Upload items will appear here -->
+            </section>
+
+            <section class="explorer-section">
+                <div class="explorer-header">
+                    <h2>Object Registry</h2>
+                    <button id="refresh-btn" class="btn-icon">↻</button>
+                </div>
+                <div class="file-grid" id="file-explorer">
+                    <!-- Files will appear here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Video Preview Modal -->
+    <div id="preview-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="player" controls autoplay></video>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+name: ldr_premium_app
+description: "A premium LDR application."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons aur UI Elements
+  cupertino_icons: ^1.0.8
+  lucide_icons: ^0.257.0
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.10+1
+  animations: ^2.0.11
+
+  # Firebase & Backend Services
+  firebase_core: ^3.10.1
+  firebase_auth: ^5.4.1
+  cloud_firestore: ^5.6.0
+  firebase_database: ^11.1.8
+
+  # Features & Utilities
+  geolocator: ^13.0.1 # Location ke liye (Latest)
+  battery_plus: ^6.2.2 # Battery status ke liye
+  provider: ^6.1.1 # State management
+  image_picker: ^1.1.2 # Photos ke liye
+  spotify_sdk: ^3.0.2 # Music sync ke liye
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets section (Agar images use karni hain toh yahan uncomment karein)
+  # assets:
+  #   - assets/images/
